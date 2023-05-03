@@ -1,0 +1,98 @@
+
+@import "utilidades";
+
+
+/* ----------- HEADER --------------------------------------*/
+
+.header__container {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    background-color: $warning_color;
+    border-bottom: 1px black solid;
+
+        .logo__container {
+            text-align: center;
+    
+                .logo__container--img {
+                    width: 30%;    
+                }
+
+        }
+
+        .nav__container {
+            align-self: center;
+            text-align: end;
+            padding-right: 20px;
+
+                .link__item {
+                    text-decoration: none;
+                    font-size: 20px;
+                    color: white;
+                    border-right: black 1px solid;
+                    padding-right: 20px;
+                    padding-left: 20px;
+                    
+
+                    &:hover {
+                        background-color: $primary_color;
+                        padding: 10px 10px;
+                        border-radius: 10px;
+                        border: none;
+                    }
+                }
+        }
+
+}
+
+
+
+
+
+/* ------------------- FOOTER ---------------------------------*/
+
+.footer__container {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    background-color: $warning_color;
+    border-top: 1px black solid;
+
+        h4 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+    .footer__container--info {
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+        border-bottom: 1px solid black;
+        
+            .footer__info--nav {
+                margin-left: 50px;       
+        
+                    .footer__link--item {
+                        display: block;
+                        text-decoration: none;
+                        color: black;
+                        margin-bottom: 20px;
+
+                        &:hover {
+                            color: white;
+                        }
+                    }
+            } 
+
+            .footer__info--contacto {
+
+                    img {
+                        &:hover {
+                            background-color: $primary_color;
+                        }
+                    }
+            }
+    }
+
+    .footer__registro {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
